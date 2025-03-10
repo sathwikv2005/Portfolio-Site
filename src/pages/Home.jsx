@@ -8,15 +8,19 @@ import TechStack from '../components/home/TechStack'
 export default function Home() {
 	return (
 		<div className="home--container">
-			<Header />
-			<TechStack />
-			<About />
+			<div className="home--hero">
+				<Header />
+				<div className="hero--body">
+					<TechStack />
+					<About />
+				</div>
+			</div>
 			<Projects />
 			<div className="home--info">
 				<Education />
 				<Contact />
 			</div>
-			<div style={{ height: '300px' }}></div>
+			<div style={{ height: '30vh' }}></div>
 		</div>
 	)
 }
