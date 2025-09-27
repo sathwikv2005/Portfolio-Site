@@ -5,7 +5,7 @@ import { FaLinkedinIn } from 'react-icons/fa6'
 
 export default function Contact() {
 	return (
-		<div className="contact--wrapper">
+		<div id="contact" className="contact--wrapper">
 			<div className="contact--heading">
 				<MdContacts /> Contact
 			</div>

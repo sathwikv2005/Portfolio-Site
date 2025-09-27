@@ -14,6 +14,10 @@
 	--font-big-shoulders: 'Big Shoulders', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -104,8 +108,72 @@ body {
 	height: min(300px, 40%);
 }
 
+.navbar--container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.navbar {
+	position: relative;
+	width: 50%;
+	background-color: var(--project-bg);
+	background: transparent;
+	border: solid 2px var(--project-bg);
+	/* box-shadow: 0px 0px 5px 3px var(--shadow); */
+	border-radius: 35px;
+	padding: 10px 0px;
+	display: flex;
+	justify-content: space-evenly;
+	animation: shinny 500ms ease-in-out;
+	overflow: hidden;
+	transition: transform 300ms ease-in-out;
+}
+
+.navbar::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -150%;
+	width: 20%;
+	height: 100%;
+	background: linear-gradient(
+		-120deg,
+		rgba(255, 255, 255, 0) 30%,
+		rgba(255, 255, 255, 0.2),
+		rgba(255, 255, 255, 0) 70%
+	);
+	transform: translateY(-50%);
+	animation: slidehorizontalLeft 8s infinite;
+	animation-delay: 750ms;
+}
+
+@keyframes slidehorizontalLeft {
+	0% {
+		left: 100%;
+	}
+	100% {
+		left: -100%;
+	}
+}
+
+.navbar:hover {
+	box-shadow: 0px 0px 10px 5px var(--shadow);
+}
+
+.navbar--item {
+	font-size: 12px;
+	color: var(--redish-brown);
+	font-weight: 600;
+}
+
+.navbar--item:hover {
+	color: var(--warm-orange);
+}
+
 .home--header {
-	margin-top: 2rem;
+	margin-top: 0rem;
 	width: 100%;
 	display: flex;
 	align-content: center;
@@ -200,7 +268,7 @@ body {
 	/* margin-top: 5rem; */
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 110px));
+	grid-template-columns: repeat(auto-fit, minmax(100px, 115px));
 	gap: 10px;
 	justify-content: center;
 	animation: fadein 2s forwards;
@@ -223,7 +291,7 @@ body {
 	justify-content: center;
 	gap: 5px;
 	padding: 5px;
-	font-size: 12px;
+	font-size: 11px;
 	background: transparent;
 	color: white;
 	border-radius: 5px;
@@ -261,6 +329,10 @@ body {
 
 .home--skill--icon {
 	font-size: 18px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .home--about {
@@ -335,6 +407,7 @@ body {
 
 .home--project--img {
 	width: 40%;
+	/* max-height: 200px; */
 	border-radius: 5px;
 }
 
@@ -351,9 +424,9 @@ body {
 	margin-top: 1rem;
 	text-align: justify;
 	padding: 0px clamp(20px, 2.5vw, 40px);
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 300;
-	font-family: var(--font-ubuntu);
+	font-family: var(--font-poppins);
 }
 
 .project--techstack {
@@ -545,6 +618,16 @@ body {
 		height: 85vh;
 		height: 85dvh;
 	}
+	.navbar {
+		width: 90%;
+	}
+	.navbar--container {
+		margin-top: 4rem;
+		justify-content: center;
+	}
+	.navbar--item {
+		font-size: 14px;
+	}
 	.home--name {
 		display: flex;
 		flex-direction: column;
@@ -563,6 +646,7 @@ body {
 	}
 	.project--des {
 		padding: 0px 10px;
+		text-align: left;
 	}
 	.education--timeline::before {
 		left: 23.5px;
