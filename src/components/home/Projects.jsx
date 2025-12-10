@@ -8,7 +8,7 @@ export default function Projects() {
 			<div className="project--heading">Projects</div>
 			<div className="home--project">
 				<div className="home--project--details">
-					<a target="blank" href="https://github.com/sathwikv2005/KitsuneAndroidApp">
+					<a target="blank" href="https://github.com/sathwikv2005/BetterVTOP-VITAP">
 						<div className="project--title hover">Better VTOP</div>
 					</a>
 					<div className="project--des">
