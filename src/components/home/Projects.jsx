@@ -1,11 +1,60 @@
 import { FaGithub, FaHtml5, FaJava, FaNodeJs, FaAndroid } from 'react-icons/fa6'
-import { FaReact, FaJsSquare, FaGlobe, FaApple, FaGlobeAmericas } from 'react-icons/fa'
+import {
+	FaReact,
+	FaJsSquare,
+	FaGlobe,
+	FaApple,
+	FaGlobeAmericas,
+	FaCode,
+	FaExternalLinkAlt,
+} from 'react-icons/fa'
 import { SiExpress, SiMongodb, SiSocketdotio } from 'react-icons/si'
+import { HiMiniCpuChip } from 'react-icons/hi2'
 
 export default function Projects() {
 	return (
 		<div id="projects" className="home--project--wrapper">
 			<div className="project--heading">Projects</div>
+
+			<div className="home--project">
+				<div className="home--project--details">
+					<a target="blank" href="https://github.com/sathwikv2005/Lox">
+						<div className="project--title hover">Lox Interpreter</div>
+					</a>
+					<div className="project--des">
+						A full implementation of the Lox programming language built from scratch in Java.
+						Features a hand-written scanner, recursive-descent parser, AST evaluation, lexical
+						scoping, closures, classes, inheritance, and dynamic dispatch.
+					</div>
+					<div className="project--techstack home--techstack">
+						<div className="home--skill hover shinny">
+							<FaJava color="#f89820" className="home--skill--icon" />
+							Java
+						</div>
+						<div className="home--skill hover shinny">
+							<HiMiniCpuChip color="#2BD5C7" className="home--skill--icon" />
+							Interpreters
+						</div>
+						<div className="home--skill hover shinny">
+							<FaCode className="home--skill--icon" />
+							Parsing
+						</div>
+					</div>
+					<div className="project--btns">
+						<a target="blank" href="https://github.com/sathwikv2005/Lox">
+							<FaGithub className="project--btn hover" />
+						</a>
+					</div>
+				</div>
+				<img
+					src="/lox.png"
+					onClick={() => {
+						window.open('https://github.com/sathwikv2005/Lox', '_blank', 'noopener,noreferrer')
+					}}
+					className="home--project--img hover"
+				/>
+			</div>
+
 			<div className="home--project">
 				<div className="home--project--details">
 					<a target="blank" href="https://github.com/sathwikv2005/BetterVTOP-VITAP">
@@ -51,12 +100,51 @@ export default function Projects() {
 						window.open(
 							'https://github.com/sathwikv2005/BetterVTOP-VITAP',
 							'_blank',
-							'noopener,noreferrer'
+							'noopener,noreferrer',
 						)
 					}}
 					className="home--project--img hover"
 				/>
 			</div>
+
+			<div className="home--project">
+				<div className="home--project--details">
+					<a target="blank" href="https://ripost.sathwik.xyz">
+						<div className="project--title hover">Ripost</div>
+					</a>
+					<div className="project--des">
+						Ripost is a real-time typing game built around an input-driven combat loop, where
+						keystroke accuracy and latency directly influence damage, combo multipliers, and player
+						survivability during scripted boss encounters and timed burn phases.
+					</div>
+					<div className="project--techstack home--techstack">
+						<div className="home--skill hover shinny">
+							<FaReact color="#61DBFB" className="home--skill--icon" />
+							React
+						</div>
+						<div className="home--skill hover shinny">
+							<FaNodeJs color="#38783b" className="home--skill--icon" />
+							Nodejs
+						</div>
+					</div>
+					<div className="project--btns">
+						<a target="blank" href="https://github.com/sathwikv2005/Ripost">
+							<FaGithub className="project--btn hover" />
+						</a>
+						<a target="blank" href="https://ripost.sathwik.xyz">
+							<FaGlobe className="project--btn hover" />
+						</a>
+					</div>
+				</div>
+				<img
+					src="/ripost.png"
+					onClick={() => {
+						window.open('https://github.com/sathwikv2005/Ripost', '_blank', 'noopener,noreferrer')
+					}}
+					className="home--project--img hover"
+				/>
+			</div>
+
 			<div className="home--project">
 				<div className="home--project--details">
 					<a target="blank" href="https://smallurl.sathwik.xyz ">
@@ -118,8 +206,7 @@ export default function Projects() {
 					<div className="project--des">
 						A real-time, multiplayer Tic Tac Toe game built using HTML, CSS, JavaScript, and
 						Socket.io. The game leverages Socket.io for real-time communication, allowing two
-						players to connect and play seamlessly. Socket.io handles events like player moves, game
-						resets, and win conditions, ensuring instant updates for both players.
+						players to connect and play seamlessly.
 					</div>
 					<div className="project--techstack home--techstack">
 						<div className="home--skill hover shinny">
@@ -163,6 +250,15 @@ export default function Projects() {
 					}}
 					className="home--project--img hover"
 				/>
+			</div>
+
+			<div
+				className="home--github"
+				onClick={() =>
+					window.open('https://github.com/sathwikv2005', '_blank', 'noopener,noreferrer')
+				}
+			>
+				More on my GitHub <FaExternalLinkAlt />
 			</div>
 		</div>
 	)
