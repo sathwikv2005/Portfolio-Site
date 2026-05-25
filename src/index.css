@@ -410,8 +410,10 @@ body {
 }
 
 .project--title {
+	display: flex;
 	font-size: 24px;
-	width: max-content;
+	justify-content: center;
+	width: 100%;
 	background: linear-gradient(to bottom, var(--default-text) 30%, var(--warm-orange) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -556,7 +558,7 @@ body {
 }
 
 .project--btns {
-	margin-top: 1rem;
+	margin-top: 1.5rem;
 	width: 100%;
 	display: flex;
 	padding-right: clamp(20px, 2.5vw, 40px);
@@ -766,8 +768,12 @@ body {
 }
 
 @media (max-width: 750px) {
-	.home--project--img {
-		display: none;
+	.home--project {
+		flex-direction: column-reverse;
+		justify-content: center;
+		padding: 20px;
+		padding-top: 30px;
+		min-height: 400px;
 	}
 	.home--project--details {
 		width: 100%;
@@ -810,13 +816,7 @@ body {
 		align-content: flex-start;
 		margin-left: 5vw;
 	}
-	.home--project {
-		flex-direction: column;
-		justify-content: center;
-		padding: 20px;
-		padding-top: 30px;
-		min-height: 400px;
-	}
+
 	.project--des {
 		padding: 0px 10px;
 		text-align: left;
@@ -852,12 +852,12 @@ body {
 @media (max-width: 600px) {
 	.project--des {
 		padding-left: 0.5rem;
-		gap: 0.75rem;
+		gap: 0.55rem;
 	}
 
 	.project--des li {
 		font-size: 13px;
-		line-height: 1.6;
+		line-height: 1.5;
 		padding-left: 1rem;
 	}
 }

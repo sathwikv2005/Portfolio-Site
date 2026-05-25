@@ -18,11 +18,10 @@ export default function Project({ title, des, github, live, skills, img }) {
 					<a target="blank" href={github}>
 						<FaGithub className="project--btn hover" />
 					</a>
-					{live && (
-						<a target="blank" href={live}>
-							<FaGlobe className="project--btn hover" />
-						</a>
-					)}
+
+					<a target="blank" href={live || github}>
+						<FaGlobe className="project--btn hover" />
+					</a>
 				</div>
 			</div>
 			<img

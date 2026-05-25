@@ -36,7 +36,7 @@ export default function Projects() {
 						<Skill.GarbageCollection />
 					</>
 				}
-				img={'/lox.png'}
+				img={'/helium.png'}
 			/>
 
 			<Project
