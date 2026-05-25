@@ -767,6 +767,87 @@ body {
 	color: var(--darker-text);
 }
 
+.terminal--end {
+	height: 35vh;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+
+	padding: 2rem 0 0;
+
+	font-family: 'Fira Code', monospace;
+	color: var(--darker-text);
+
+	scroll-behavior: smooth;
+	/* firefox */
+	scrollbar-width: thin;
+	scrollbar-color: rgba(117, 223, 241, 0.35) transparent;
+}
+
+/* chrome, edge, safari */
+.terminal--end::-webkit-scrollbar {
+	width: 6px;
+}
+
+.terminal--end::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.terminal--end::-webkit-scrollbar-thumb {
+	background: rgba(117, 223, 241, 0.35);
+	border-radius: 999px;
+}
+
+.terminal--end::-webkit-scrollbar-thumb:hover {
+	background: rgba(117, 223, 241, 0.6);
+}
+
+.terminal--end p {
+	margin: 0;
+	font-size: 0.95rem;
+	flex-shrink: 0;
+}
+
+.terminal--end span:first-child {
+	color: var(--blue-text);
+	margin-right: 0.5rem;
+}
+
+.terminal--input {
+	color: white;
+	word-break: break-word;
+}
+
+.terminal--caret {
+	animation: blink 1s infinite;
+	margin-left: 2px;
+}
+
+.terminal--end::-webkit-scrollbar {
+	width: 6px;
+}
+
+.terminal--end::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.15);
+	border-radius: 999px;
+}
+
+@keyframes blink {
+	0%,
+	50% {
+		opacity: 1;
+	}
+
+	51%,
+	100% {
+		opacity: 0;
+	}
+}
+
 @media (max-width: 750px) {
 	.home--project {
 		flex-direction: column-reverse;

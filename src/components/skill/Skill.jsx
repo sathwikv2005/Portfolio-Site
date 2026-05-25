@@ -13,6 +13,8 @@ import {
 	FaMemory,
 } from 'react-icons/fa'
 
+import { FaComputer } from 'react-icons/fa6'
+
 import { SiExpress, SiMongodb, SiCplusplus, SiSocketdotio } from 'react-icons/si'
 
 import { BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi'
@@ -73,7 +75,7 @@ export function Java() {
 }
 
 export function Interpreters() {
-	return <Skill icon={HiMiniCpuChip} name="Interpreters" color="#2BD5C7" />
+	return <Skill icon={FaComputer} name="Interpreters" color="#86D52B" />
 }
 
 export function Parsing() {

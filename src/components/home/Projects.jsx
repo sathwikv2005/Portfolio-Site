@@ -32,6 +32,7 @@ export default function Projects() {
 					<>
 						<Skill.C />
 						<Skill.CompilerDesign />
+						<Skill.Interpreters />
 						<Skill.VirtualMachine />
 						<Skill.GarbageCollection />
 					</>
