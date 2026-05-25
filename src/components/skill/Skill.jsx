@@ -17,8 +17,6 @@ import { SiExpress, SiMongodb, SiCplusplus, SiSocketdotio } from 'react-icons/si
 
 import { BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi'
 
-import { TbBrandCSharp } from 'react-icons/tb'
-
 import { HiMiniCpuChip } from 'react-icons/hi2'
 
 export default function Skill({ icon: Icon, color, name }) {
@@ -103,7 +101,7 @@ export function HTMLCSS() {
 }
 
 export function C() {
-	return <Skill icon={TbBrandCSharp} color="#00599C" name="C Language" />
+	return <Skill icon={SiCplusplus} color="#00599C" name="C Language" />
 }
 
 export function CompilerDesign() {
