@@ -2,50 +2,21 @@ import { FaJava, FaNodeJs } from 'react-icons/fa6'
 import { FaReact, FaJsSquare, FaPython } from 'react-icons/fa'
 import { SiExpress, SiMongodb, SiCplusplus } from 'react-icons/si'
 import { BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi'
+import * as Skill from '../skill/Skill'
 
 export default function TechStack() {
 	return (
 		<div className="home--techstack">
-			<div className="home--skill hover shinny">
-				<FaReact color="#61DBFB" className="home--skill--icon" />
-				React
-			</div>
-			<div className="home--skill hover shinny">
-				<FaNodeJs color="#38783b" className="home--skill--icon" />
-				Nodejs
-			</div>
-			<div className="home--skill hover shinny">
-				<SiExpress className="home--skill--icon" />
-				Express
-			</div>
-			<div className="home--skill hover shinny">
-				<SiMongodb color="#00684a" className="home--skill--icon" />
-				Mongo DB
-			</div>
-			<div className="home--skill hover shinny">
-				<BiLogoPostgresql color="#30648c" className="home--skill--icon" />
-				SQL
-			</div>
-			<div className="home--skill hover shinny">
-				<BiLogoTypescript color="#3178c6" className="home--skill--icon" />
-				Type Script
-			</div>
-			<div className="home--skill hover shinny">
-				<FaJsSquare color="#f7df1d" className="home--skill--icon" />
-				Java Script
-			</div>
-			<div className="home--skill hover shinny">
-				<SiCplusplus color="#088ad5" className="home--skill--icon" />
-				C++
-			</div>
-			<div className="home--skill hover shinny">
-				<FaPython color="#356e9b" className="home--skill--icon" />
-				Python
-			</div>
-			<div className="home--skill hover shinny">
-				<FaJava color="#f45a3c" className="home--skill--icon" />
-				Java
-			</div>
+			<Skill.React />
+			<Skill.Node />
+			<Skill.Express />
+			<Skill.Mongo />
+			<Skill.SQL />
+			<Skill.TypeScript />
+			<Skill.JavaScript />
+			<Skill.Cpp />
+			<Skill.Python />
+			<Skill.Java />
 		</div>
 	)
 }

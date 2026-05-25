@@ -16,7 +16,7 @@ export default function Header() {
 					<LuGithub className="home--socials hover" />
 				</a>
 			</div>
-			<div className="home--web--dev typewriter">WEB DEVELOPER</div>
+			<div className="home--web--dev typewriter">SOFTWARE DEVELOPER</div>
 		</div>
 	)
 }
