@@ -25,8 +25,8 @@ export default function useTerminalBoot({
 			setCantype(false)
 			setHistory([
 				{
-					command: terminalAsci,
-					output: null,
+					command: null,
+					output: terminalAsci,
 					color: '#00ff88',
 					dir: '~',
 				},
