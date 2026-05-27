@@ -5,7 +5,7 @@ import Header from '../components/home/Header'
 import NavBar from '../components/home/NavBar'
 import Projects from '../components/home/Projects'
 import TechStack from '../components/home/TechStack'
-import Terminal from '../components/home/Terminal'
+import Terminal from '../components/terminal/Terminal'
 
 export default function Home() {
 	return (
@@ -23,7 +23,7 @@ export default function Home() {
 				<Education />
 				<Contact />
 			</div>
-			<div style={{ height: '35vh' }}>
+			<div style={{ height: '40vh' }}>
 				<Terminal />
 			</div>
 		</div>

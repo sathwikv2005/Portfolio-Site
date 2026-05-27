@@ -1,4 +1,4 @@
-function smoothScroll(targetId, duration = 1800, maxSpeed = 1.5) {
+export function smoothScroll(targetId, duration = 1800, maxSpeed = 1.5) {
 	const target = document.querySelector(targetId)
 
 	if (!target) return
