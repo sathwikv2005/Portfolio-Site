@@ -23,7 +23,7 @@ export default function Home() {
 				<Education />
 				<Contact />
 			</div>
-			<div style={{ height: '40vh' }}>
+			<div className="last">
 				<Terminal />
 			</div>
 		</div>
